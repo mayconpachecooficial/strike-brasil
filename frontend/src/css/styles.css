@@ -1,0 +1,603 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Poppins, sans-serif;
+    background-color: #111;
+    color: #f5f5f5;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: -10px;
+    background-color: #222;
+    position: relative;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    position: relative;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+}
+
+nav ul li .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    padding: 10px 0;
+    border-radius: 5px;
+    min-width: 150px;
+    z-index: 1000;
+}
+
+nav ul li:hover .submenu {
+    display: block;
+}
+
+nav ul li .submenu li {
+    padding: 5px 0;
+}
+
+nav ul li .submenu li a {
+    color: white;
+    padding: 10px 15px;
+    white-space: nowrap;
+}
+
+nav ul li .submenu li:hover {
+    background-color: #444;
+}
+
+nav ul li .submenu li a:hover {
+    color: #fff;
+}
+
+
+.logo-ret img {
+    height: 100px;
+}
+
+.search-icon img {
+    width: 25px;
+    filter: invert(100%);
+    position: relative;
+    right: 30px;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cont-banner img {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    padding: 5%;
+}
+
+.cont-carro {
+    margin-top: -50%; /* Ajuste conforme necessário */
+    position: relative;
+    left: 65px;
+    padding: 0;
+}
+
+.cont-carro img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+.cont-p1 {
+    width: 100px; /* Ajuste a largura conforme necessário */
+    height: 50px; /* Ajuste a altura conforme necessário */
+    position: relative;
+    top: 105px; /* Ajuste conforme necessário */
+    left: 360px; /* Ajuste conforme necessário */
+    padding: 0;
+    transform: rotate(-90deg); /* Rotaciona o contêiner 90 graus */
+    transform-origin: left bottom; /* Define a origem da rotação */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 8px;
+    cursor: pointer;
+}
+
+.cont-p1 p {
+    margin: 0; /* Remove as margens padrão */
+    padding: 0; /* Remove o preenchimento padrão */
+    color: #ffff;
+    text-align: center;
+}
+
+.cont-stg1 {
+    width: 100px; /* Ajuste a largura conforme necessário */
+    height: 50px; /* Ajuste a altura conforme necessário */
+    position: relative;
+    top: 40px; /* Ajuste conforme necessário */
+    left: 380px; /* Ajuste conforme necessário */
+    padding: 0;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    font-size: 8px;
+    cursor: pointer;
+}
+
+.cont-org {
+    width: 100px; /* Ajuste a largura conforme necessário */
+    height: 50px; /* Ajuste a altura conforme necessário */
+    position: relative;
+    top: -10px; /* Ajuste conforme necessário */
+    left: 480px; /* Ajuste conforme necessário */
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    font-size: 8px;
+    cursor: pointer;
+}
+
+.cont-p1 p, .cont-stg1 h1, .cont-org h1 {
+    font-size: 2em;
+}
+
+.cont-stg1 p, .cont-org p {
+    font-size: 1.5em;
+}
+
+.cont-information1, .cont-information2, .cont-information3 {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.cont-information1 img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    position: relative;
+    top: -550px;
+    left: 280px;
+}
+
+.cont-information2 img {
+    /* width: 100%;
+    max-width: 400px; */
+    height: auto;
+    position: relative;
+    top: -480px;
+    left: 150px;
+    font-size: 8px;
+}
+
+.cont-information3 img {
+    /* width: 100%;
+    max-width: 400px; */
+    height: auto;
+    position: relative;
+    top: -655px;
+    left: 420px;
+    font-size: 8px;
+}
+
+.cont-information2 button {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 10px auto;
+    background-color: #EDBA00;
+    color: black;
+    border: 2px solid black; /* Define uma borda de 2px, sólida e preta */
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    position: relative;
+    top: -480px;
+    left: 140px;
+}
+
+.cont-information3 button {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 10px auto;
+    color: #ffff;
+    background-color: #282828;
+    border: 2px solid white; /* Define uma borda de 2px, sólida e preta */
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    position: relative;
+    top: -670px;
+    left: 390px;
+}
+
+
+.cont-information2 button:hover  {
+    background-color: black;
+    color: white;
+}
+
+.cont-information3 button:hover {
+    background-color: #EDBA00;
+    color: black
+}
+
+
+/* Contêiner principal para layout lado a lado */
+.main-content {
+    display: flex;
+    justify-content: space-between; /* Garante que os elementos se mantenham nos lados opostos */
+    padding: 0px; /* Remove o espaçamento superior */
+    position: relative;
+}
+
+/* Seções à esquerda */
+.cont-info1,
+.cont-info2,
+.cont-info3 {
+    width: 150%; /* Ajuste conforme necessário */
+    margin: 20px;
+}
+
+/* FAQ alinhado à direita e movido para o topo */
+.cont-faq {
+    width: 40%; /* Ajuste conforme necessário */
+    text-align: left; /* Alinha o texto e o conteúdo do FAQ à direita */
+    position: absolute; /* Torna o FAQ posicionado em relação ao contêiner */
+    top: -500px; /* Move o FAQ para o topo */
+    right: 620px; /* Garante que ele fique alinhado à direita */
+    margin: 10px; /* Ajusta o espaçamento ao redor do FAQ */
+}
+
+/* Estilos para o item FAQ */
+.faq-item {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+    border-top: 0.5px solid #fff;
+    border-bottom: 0.5px solid #fff;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    top: -100px;
+    left: 400px;
+}
+
+/* Oculta o checkbox, mas ainda é utilizado para controle */
+.faq-checkbox {
+    display: none;
+}
+
+/* Estilos para o botão de pergunta */
+.faq-question {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+
+/* Inicialmente esconde as respostas */
+.faq-answer {
+    display: none;
+    padding: 10px;
+    /* background: #444; */
+    border-radius: 5px;
+    text-align: right;
+    position: relative;
+
+}
+
+/* Mostra a resposta quando o checkbox está marcado */
+.faq-checkbox:checked + .faq-question + .faq-answer {
+    display: block;
+}
+
+/* Estilo da seta */
+.arrow {
+    font-size: 20px;
+    margin-left: 10px;
+    transition: transform 0.3s ease; /* Adiciona uma transição suave */
+}
+
+/* Muda a seta quando o FAQ está aberto */
+.faq-checkbox:checked + .faq-question .arrow {
+    transform: rotate(45deg); /* Muda o símbolo + para uma cruz quando ativo */
+}
+
+
+.arrow.plus {
+    transform: rotate(45deg); /* Muda o símbolo + para uma cruz quando ativo */
+}
+
+
+
+.faq-question {
+    display: flex;
+    justify-content: flex-end; /* Alinha a pergunta e a seta à direita */
+    align-items: center;
+    cursor: pointer;
+}
+
+.arrow {
+    font-size: 20px;
+}
+
+/* Mostra a resposta quando o item está ativo */
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+.form-container {
+    position: relative; /* Coloca o formulário sobre o fundo padrão */
+    width: 856px;
+    height: 470px;
+    /* top: 1575px;
+    left: 292px; */
+    gap: 40px; /* Espaçamento entre os elementos do formulário */
+    opacity: 1; /* Torna o formulário visível */
+    background: transparent; /* Remove o fundo do formulário */
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.form-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.form-description {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #f5f5f5;
+}
+
+.form-field {
+    margin-bottom: 15px;
+}
+
+.form-field label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-field input,
+.form-field select {
+    width: 100%;
+    padding: 10px;
+    border: 1px ;
+    border-radius: 4px;
+    background-color: #333;
+    color: #f5f5f5;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 20px; /* Espaçamento entre o formulário e o botão */
+}
+
+button {
+    width: 254px;
+    height: 60px;
+    background-color: #EDBA00;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+    opacity: 1; /* Torna o botão visível */
+}
+
+button:hover {
+    background-color: black; /* Cor ao passar o mouse */
+    color: white;
+}
+
+.footer {
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 500px;
+}
+
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .cont-carro img {
+        max-width: 100%;
+    }
+
+    .cont-information1 img,
+    .cont-information2 img,
+    .cont-information3 img {
+        max-width: 100%;
+    }
+
+    .cont-information1,
+    .cont-information2,
+    .cont-information3 {
+        margin: 0 auto;
+        padding: 0 20px; /* Adiciona algum padding para espaçamento */
+    }
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .cont-carro img,
+    .cont-information1 img,
+    .cont-information2 img,
+    .cont-information3 img {
+        max-width: 100%;
+    }
+
+    .cont-information1,
+    .cont-information2,
+    .cont-information3 {
+        margin: 20px auto;
+        padding: 0 10px; /* Adiciona um pouco de padding */
+    }
+}
+
+/* Media Queries */
+
+/* Para telas menores que 1200px */
+@media (max-width: 1200px) {
+    .cont-carro img,
+    .cont-information1 img,
+    .cont-information2 img,
+    .cont-information3 img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .cont-information1,
+    .cont-information2,
+    .cont-information3 {
+        margin: 20px auto;
+        padding: 0 15px; /* Ajusta o padding para mais espaçamento interno */
+    }
+
+    .cont-information1 img {
+        max-width: 90%; /* Ajusta o máximo da largura */
+    }
+}
+
+/* Para telas menores que 768px */
+/* Estilos para Responsividade */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        background-color: #222; /* Garante que o header tenha o fundo escuro */
+    }
+
+    .logo img {
+        height: 40px; /* Reduz o tamanho do logo */
+    }
+
+    .menu-toggle {
+        display: flex; /* Exibe o ícone de menu para mobile */
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+        width: 100%;
+        background-color: #222; /* Garante que o fundo do menu seja escuro */
+        position: absolute; /* Posiciona o menu abaixo do header */
+        top: 60px; /* Ajusta a posição do menu */
+        left: 0;
+        text-align: center; /* Centraliza o menu */
+        display: none; /* Inicialmente oculto */
+    }
+
+    nav ul.active {
+        display: flex; /* Exibe o menu quando a classe active é adicionada */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Ajusta a margem para espaçamento uniforme */
+    }
+
+    .search-icon img {
+        width: 24px; /* Ajusta o tamanho do ícone de busca */
+        margin: 10px 0;
+    }
+
+    .cont-p1,
+    .cont-stg1,
+    .cont-org {
+        font-size: 1.2em; /* Ajusta o tamanho da fonte */
+        margin: 10px 0; /* Adiciona margem vertical */
+        position: static; /* Remove o posicionamento absoluto */
+        transform: none; /* Remove a rotação */
+        text-align: center; /* Centraliza o texto */
+        width: 100%; /* Ajusta a largura para ocupar toda a largura disponível */
+    }
+
+    .cont-information1,
+    .cont-information2,
+    .cont-information3 {
+        margin: 20px auto; /* Adiciona margem vertical e centraliza */
+        padding: 0 15px; /* Adiciona padding horizontal */
+        width: 100%; /* Ajusta a largura para ocupar toda a largura disponível */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    .cont-information1 img,
+    .cont-information2 img,
+    .cont-information3 img {
+        width: 100%; /* Ajusta a largura da imagem */
+        height: auto; /* Mantém a proporção da imagem */
+    }
+
+    .cont-information2 button,
+    .cont-information3 button {
+        width: 90%; /* Ajusta a largura do botão */
+        max-width: none; /* Remove o limite máximo de largura */
+        font-size: 14px; /* Ajusta o tamanho da fonte */
+        padding: 12px; /* Ajusta o padding para um tamanho mais apropriado */
+        margin: 10px auto; /* Centraliza os botões */
+        display: block; /* Garante que os botões sejam exibidos como blocos */
+    }
+
+    .cont-faq {
+        font-size: 16px; /* Ajusta o tamanho da fonte */
+        width: 90%; /* Faz o FAQ ocupar 90% da largura */
+        margin: 20px auto; /* Adiciona margem vertical e centraliza o FAQ */
+        position: static; /* Remove o posicionamento absoluto */
+    }
+
+    .faq-item {
+        margin: 10px 0; /* Adiciona margem vertical */
+        width: 100%; /* Faz o item FAQ ocupar toda a largura disponível */
+    }
+}
+
+    
+
+
+
